@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sadhbuddhi Nuthan — AI Engineer specializing in RAG, Agentic AI, and production LLM applications. B.Tech AI & ML graduate with internship experience at Regality AI." />
+  <meta property="og:title" content="Sadhbuddhi Nuthan | AI Engineer" />
+  <meta property="og:description" content="Building intelligent systems with Generative AI, RAG, and Agentic Workflows." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#030305" />
+  <meta property="og:image" content="assets/profile.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>Sadhbuddhi Nuthan | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sadhbuddhi Nuthan",
+    "jobTitle": "AI Engineer",
+    "url": "https://github.com/Snuthan",
+    "sameAs": [
+      "https://www.linkedin.com/in/nuthan-s29/",
+      "https://github.com/Snuthan"
+    ],
+    "knowsAbout": ["Generative AI", "RAG", "Agentic AI", "LangChain", "Deep Learning", "FastAPI"]
+  }
+  </script>
+</head>
+<body>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--3" aria-hidden="true"></div>
+
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="page-loader__ring"></div>
+    <img src="assets/profile.png" alt="" class="page-loader__photo" width="56" height="56" />
+  </div>
+
+  <header class="nav-wrapper">
+    <nav class="nav glass" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo">
+        <img src="assets/profile.png" alt="" class="nav__logo-img" width="36" height="36" />
+        <span class="nav__logo-text">Sadhbuddhi</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#experience" data-nav>Experience</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#contact" class="nav__cta" data-nav>Let's Talk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <div class="hero__badge reveal">
+          <span class="pulse-dot"></span>
+          Open to AI Engineer Opportunities
+        </div>
+        <p class="hero__name reveal reveal--delay-1">Sadhbuddhi Nuthan</p>
+        <h1 class="hero__title reveal reveal--delay-2">
+          Building AI Systems<br />
+          <span class="gradient-text" id="hero-typed">That Solve Real Problems</span>
+        </h1>
+        <p class="hero__role reveal reveal--delay-2">
+          <span id="role-rotator">AI Engineer</span>
+        </p>
+        <p class="hero__subtitle reveal reveal--delay-3">
+          B.Tech AI &amp; ML student (graduating Apr 2026) building RAG pipelines,
+          agentic workflows, and LLM applications — with internship experience at
+          <strong>Regality AI</strong>, Hyderabad.
+        </p>
+        <div class="hero__actions reveal reveal--delay-4">
+          <a href="#projects" class="btn btn--primary btn--magnetic">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="resume.html" class="btn btn--secondary btn--magnetic" target="_blank" rel="noopener">View Resume</a>
+          <a href="#contact" class="btn btn--ghost btn--magnetic">Contact Me</a>
+        </div>
+        <div class="hero__social reveal reveal--delay-5">
+          <a href="https://www.linkedin.com/in/nuthan-s29/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Snuthan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:nuthannikhil2903@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+        <div class="hero__stats reveal reveal--delay-5">
+          <div class="hero__stat">
+            <span class="hero__stat-value" data-count="6">0</span>
+            <span class="hero__stat-label">GitHub Repos</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value" data-count="3">0</span>
+            <span class="hero__stat-label">AI Projects</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value hero__stat-value--text">RAG</span>
+            <span class="hero__stat-label">Core Expertise</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual reveal reveal--delay-3">
+        <div class="hero__image-wrapper">
+          <div class="hero__orbit hero__orbit--1"></div>
+          <div class="hero__orbit hero__orbit--2"></div>
+          <div class="hero__orbit hero__orbit--3"></div>
+          <svg class="hero__network" viewBox="0 0 340 340" aria-hidden="true">
+            <line x1="170" y1="170" x2="60" y2="80" class="net-line"/>
+            <line x1="170" y1="170" x2="280" y2="90" class="net-line"/>
+            <line x1="170" y1="170" x2="50" y2="250" class="net-line"/>
+            <line x1="170" y1="170" x2="290" y2="240" class="net-line"/>
+            <line x1="170" y1="170" x2="170" y2="30" class="net-line"/>
+            <circle cx="60" cy="80" r="4" class="net-node"/>
+            <circle cx="280" cy="90" r="4" class="net-node"/>
+            <circle cx="50" cy="250" r="4" class="net-node"/>
+            <circle cx="290" cy="240" r="4" class="net-node"/>
+            <circle cx="170" cy="30" r="4" class="net-node"/>
+          </svg>
+          <div class="hero__avatar">
+            <div class="hero__avatar-inner">
+              <img src="assets/profile.png" alt="Sadhbuddhi Nuthan" class="hero__photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <span class="hero__initials">SN</span>
+            </div>
+            <div class="hero__avatar-badge">AI Engineer</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span>Scroll</span>
+        <div class="scroll-hint__line"></div>
+      </a>
+    </section>
+
+    <!-- Tech Marquee -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee">
+        <span>Python</span><span>LangChain</span><span>RAG</span><span>FastAPI</span>
+        <span>PyTorch</span><span>TensorFlow</span><span>Agentic AI</span><span>LLMs</span>
+        <span>Vector DBs</span><span>Prompt Engineering</span><span>Deep Learning</span><span>NLP</span>
+        <span>Python</span><span>LangChain</span><span>RAG</span><span>FastAPI</span>
+        <span>PyTorch</span><span>TensorFlow</span><span>Agentic AI</span><span>LLMs</span>
+        <span>Vector DBs</span><span>Prompt Engineering</span><span>Deep Learning</span><span>NLP</span>
+      </div>
+    </div>
+
+    <!-- Recruiter Strip -->
+    <section class="recruiter-strip">
+      <div class="container">
+        <div class="recruiter-strip__grid">
+          <div class="recruiter-pill glass reveal">
+            <div class="recruiter-pill__icon">&#9889;</div>
+            <div>
+              <strong>Ships Fast</strong>
+              <span>End-to-end AI apps from idea to API</span>
+            </div>
+          </div>
+          <div class="recruiter-pill glass reveal reveal--delay-1">
+            <div class="recruiter-pill__icon">&#128270;</div>
+            <div>
+              <strong>RAG Specialist</strong>
+              <span>Hybrid search, retrieval &amp; evaluation</span>
+            </div>
+          </div>
+          <div class="recruiter-pill glass reveal reveal--delay-2">
+            <div class="recruiter-pill__icon">&#129302;</div>
+            <div>
+              <strong>Agentic AI</strong>
+              <span>Multi-step LLM workflows &amp; automation</span>
+            </div>
+          </div>
+          <div class="recruiter-pill glass reveal reveal--delay-3">
+            <div class="recruiter-pill__icon">&#127891;</div>
+            <div>
+              <strong>Regality AI Intern</strong>
+              <span>Real-world production AI experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">About Me</span>
+          <h2 class="section__title">Engineering Intelligence<br /><span class="gradient-text">for the Real World</span></h2>
+        </div>
+        <div class="about__layout">
+          <div class="about__main glass reveal">
+            <blockquote class="about__quote">
+              "I don't just experiment with AI — I build systems that automate real workflows,
+              validate documents, and deliver measurable outcomes."
+            </blockquote>
+            <div class="about__text">
+            <p class="lead">
+              B.Tech student in <strong>Artificial Intelligence and Machine Learning</strong> at Sreyas Institute of Engineering and Technology.
+            </p>
+            <p>
+              I build intelligent systems using Generative AI, Agentic Workflows, RAG Architectures,
+              and LLM automation — with production internship experience at Regality AI, Hyderabad.
+            </p>
+              <p>
+                Passionate about emerging technologies, innovative solutions, and continuous technical growth.
+              </p>
+            </div>
+          </div>
+          <div class="about__highlights">
+            <div class="highlight-card glass reveal reveal--delay-1">
+              <div class="highlight-card__icon-wrap"><span>&#127894;</span></div>
+              <div>
+                <h3>NCC A Certificate</h3>
+                <p>Leadership, discipline &amp; resilience</p>
+              </div>
+            </div>
+            <div class="highlight-card glass reveal reveal--delay-2">
+              <div class="highlight-card__icon-wrap"><span>&#127951;</span></div>
+              <div>
+                <h3>Cricket Enthusiast</h3>
+                <p>Strategy, teamwork &amp; composure</p>
+              </div>
+            </div>
+            <div class="highlight-card glass reveal reveal--delay-3">
+              <div class="highlight-card__icon-wrap"><span>&#128218;</span></div>
+              <div>
+                <h3>Continuous Learner</h3>
+                <p>Always exploring cutting-edge AI</p>
+              </div>
+            </div>
+            <div class="highlight-card glass reveal reveal--delay-4">
+              <div class="highlight-card__icon-wrap"><span>&#129504;</span></div>
+              <div>
+                <h3>Problem Solver</h3>
+                <p>Analytical &amp; outcome-driven</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section id="capabilities" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">What I Can Build</span>
+          <h2 class="section__title">Production-Grade <span class="gradient-text">AI Systems</span></h2>
+          <p class="section__desc">Full-stack intelligent applications — not just demos.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card glass reveal" data-tilt>
+            <div class="capability-card__num">01</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h3>Agentic AI Systems</h3>
+            <p>Multi-agent orchestration with autonomous planning and tool use.</p>
+          </article>
+          <article class="capability-card glass reveal reveal--delay-1" data-tilt>
+            <div class="capability-card__num">02</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+            <h3>RAG Applications</h3>
+            <p>Hybrid search, semantic indexing, and context-aware retrieval.</p>
+          </article>
+          <article class="capability-card glass reveal reveal--delay-2" data-tilt>
+            <div class="capability-card__num">03</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+            <h3>AI Chatbots</h3>
+            <p>Domain-specific conversational agents with memory and context.</p>
+          </article>
+          <article class="capability-card glass reveal" data-tilt>
+            <div class="capability-card__num">04</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+            <h3>LLM Evaluation</h3>
+            <p>Benchmarking pipelines, quality metrics, and model comparison.</p>
+          </article>
+          <article class="capability-card glass reveal reveal--delay-1" data-tilt>
+            <div class="capability-card__num">05</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <h3>Document Intelligence</h3>
+            <p>Extraction, validation, and automated processing at scale.</p>
+          </article>
+          <article class="capability-card glass reveal reveal--delay-2" data-tilt>
+            <div class="capability-card__num">06</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <h3>Workflow Automation</h3>
+            <p>LLM-powered pipelines that eliminate repetitive work.</p>
+          </article>
+          <article class="capability-card glass reveal" data-tilt>
+            <div class="capability-card__num">07</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>AI Assistants</h3>
+            <p>Guided agents for compliance, onboarding, and support.</p>
+          </article>
+          <article class="capability-card glass reveal reveal--delay-1" data-tilt>
+            <div class="capability-card__num">08</div>
+            <div class="capability-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Enterprise AI</h3>
+            <p>Secure, scalable integrations for organizational needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects - Bento Grid -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Featured Projects</span>
+          <h2 class="section__title">Proof of <span class="gradient-text">Impact</span></h2>
+          <p class="section__desc">Real repositories. Real problems solved.</p>
+        </div>
+        <div class="bento-grid">
+          <article class="bento-card bento-card--featured glass reveal" data-tilt>
+            <div class="bento-card__glow"></div>
+            <div class="bento-card__top">
+              <span class="bento-card__label">Flagship Project</span>
+              <div class="bento-card__links">
+                <a href="https://github.com/Snuthan/regal-forms" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Regal Forms Assistant</h3>
+            <p>RAG-powered assistant to streamline RBI compliance workflows — document-aware retrieval, context-driven guidance, and automated PDF generation. Built at Regality AI.</p>
+            <ul class="bento-card__outcomes">
+              <li>RBI compliance workflow automation</li>
+              <li>Document-aware retrieval pipelines</li>
+              <li>Automated PDF &amp; form preparation</li>
+            </ul>
+            <div class="bento-card__tech">
+              <span>OpenAI</span><span>LangChain</span><span>RAG</span><span>Python</span>
+            </div>
+          </article>
+          <article class="bento-card glass reveal reveal--delay-1" data-tilt>
+            <div class="bento-card__top">
+              <span class="bento-card__label">Document AI</span>
+              <a href="https://github.com/Snuthan/pdf-chat-ai" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>Document Intelligence Assistant</h3>
+            <p>RAG application for PDF question answering with vector-based retrieval using FAISS and ChromaDB, with grounding from uploaded documents.</p>
+            <div class="bento-card__tech">
+              <span>LangChain</span><span>FAISS</span><span>ChromaDB</span>
+            </div>
+          </article>
+          <article class="bento-card glass reveal reveal--delay-2" data-tilt>
+            <div class="bento-card__top">
+              <span class="bento-card__label">Data AI</span>
+              <a href="https://github.com/Snuthan/csv-ai-analyst" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>CSV AI Analyst</h3>
+            <p>AI-powered analytics platform for natural language interaction with CSV datasets — conversational insights with Gemini, LangChain, and Pandas.</p>
+            <div class="bento-card__tech">
+              <span>Gemini</span><span>LangChain</span><span>Pandas</span>
+            </div>
+          </article>
+          <article class="bento-card bento-card--wide glass reveal reveal--delay-1" data-tilt>
+            <div class="bento-card__top">
+              <span class="bento-card__label">More on GitHub</span>
+            </div>
+            <h3>csv-ai-analyst &amp; pdf-chat-ai</h3>
+            <p>Additional AI tools — data analysis with LLMs and document Q&amp;A systems. Explore all 6 repositories on GitHub.</p>
+            <a href="https://github.com/Snuthan" target="_blank" rel="noopener noreferrer" class="bento-card__cta">
+              View All Repositories &rarr;
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Skills</span>
+          <h2 class="section__title">Technical <span class="gradient-text">Arsenal</span></h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skills-panel glass reveal">
+            <h3 class="skills-panel__title">
+              <span class="skills-panel__dot skills-panel__dot--ai"></span>
+              AI &amp; Machine Learning
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar"><span class="skill-bar__name">Python / ML</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="95"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">RAG &amp; LangChain</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">Generative AI / LLMs</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="88"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">Deep Learning</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">NLP</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="82"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">Agentic AI</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div></div>
+            </div>
+          </div>
+          <div class="skills-panel glass reveal reveal--delay-1">
+            <h3 class="skills-panel__title">
+              <span class="skills-panel__dot skills-panel__dot--dev"></span>
+              Development &amp; Tools
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar"><span class="skill-bar__name">FastAPI / REST</span><div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--purple" data-width="88"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">TensorFlow / PyTorch</span><div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--purple" data-width="85"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">SQL / Databases</span><div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--purple" data-width="80"></div></div></div>
+              <div class="skill-bar"><span class="skill-bar__name">Git / GitHub</span><div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--purple" data-width="90"></div></div></div>
+            </div>
+            <div class="skills-tags skills-tags--compact">
+              <span class="skill-tag">FAISS</span><span class="skill-tag">ChromaDB</span>
+              <span class="skill-tag">Gemini API</span><span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">Docker</span><span class="skill-tag">Scikit-Learn</span>
+              <span class="skill-tag">Pandas</span><span class="skill-tag">C++</span>
+              <span class="skill-tag">LLM Evaluation</span><span class="skill-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Experience</span>
+          <h2 class="section__title">Building AI <span class="gradient-text">in Production</span></h2>
+        </div>
+        <div class="exp-card glass reveal">
+          <div class="exp-card__header">
+            <div class="exp-card__logo">RA</div>
+            <div class="exp-card__meta">
+              <span class="exp-card__type">May 2025 — Aug 2025</span>
+              <h3>AI Engineering Intern</h3>
+              <p class="exp-card__company">Regality AI, Hyderabad</p>
+            </div>
+          </div>
+          <ul class="exp-card__list">
+            <li>Developed Graph-RAG inspired retrieval systems and agentic workflows using LangChain</li>
+            <li>Built hybrid retrieval pipelines combining semantic search and contextual reasoning</li>
+            <li>Applied prompt engineering and LLM evaluation techniques to improve response quality and reduce hallucinations</li>
+            <li>Contributed to Regal Forms Assistant — RBI compliance AI with automated PDF generation</li>
+          </ul>
+          <div class="exp-card__tags">
+            <span>Graph-RAG</span><span>Agentic AI</span><span>LangChain</span><span>LLM Evaluation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Education</span>
+          <h2 class="section__title">Academic <span class="gradient-text">Foundation</span></h2>
+        </div>
+        <article class="edu-card glass reveal">
+          <div class="edu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+          </div>
+          <div class="edu-card__content">
+            <span class="edu-card__degree">Bachelor of Technology · CGPA 7.6/10</span>
+            <h3>Artificial Intelligence &amp; Machine Learning</h3>
+            <p>Sreyas Institute of Engineering and Technology · Expected graduation Apr 2026</p>
+            <div class="edu-card__focus">
+              <span>Deep Learning</span><span>NLP</span><span>Generative AI</span><span>Hyderabad</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Certifications</span>
+          <h2 class="section__title">Credentials</h2>
+        </div>
+        <article class="cert-card glass reveal cert-card--premium">
+          <div class="cert-card__ribbon">Official</div>
+          <h3>NCC A Certificate</h3>
+          <p class="cert-card__org">National Cadet Corps</p>
+          <ul class="cert-card__achievements">
+            <li>Demonstrated leadership and discipline</li>
+            <li>Completed rigorous training program</li>
+            <li>Developed teamwork and organizational skills</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Resume</span>
+          <h2 class="section__title">30-Second <span class="gradient-text">Recruiter Brief</span></h2>
+        </div>
+        <div class="resume-block glass reveal">
+          <div class="resume-block__preview">
+            <div class="resume-doc">
+              <div class="resume-doc__header">
+                <img src="assets/profile.png" alt="" class="resume-doc__avatar-img" width="52" height="52" />
+                <div>
+                  <h3>Sadhbuddhi Nuthan</h3>
+                  <p>AI Engineer · Generative AI Developer · Agentic AI Enthusiast</p>
+                </div>
+              </div>
+              <div class="resume-doc__section">
+                <h4>Why Me</h4>
+                <p>B.Tech AI &amp; ML student with Regality AI internship (May–Aug 2025). I build Graph-RAG systems, agentic workflows, and LLM apps across compliance, document intelligence, and data analytics.</p>
+              </div>
+              <div class="resume-doc__highlights">
+                <div><strong>Internship</strong><span>Regality AI, Hyderabad</span></div>
+                <div><strong>Education</strong><span>Sreyas Institute · Apr 2026</span></div>
+                <div><strong>Stack</strong><span>Python, LangChain, FAISS</span></div>
+                <div><strong>Location</strong><span>Hyderabad, Telangana</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-block__actions">
+            <h3>Want the full picture?</h3>
+            <p>Download the complete resume with projects, skills, and experience details.</p>
+            <a href="resume.html" class="btn btn--primary" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              View Full Resume
+            </a>
+            <a href="assets/resume.pdf" class="btn btn--secondary" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download PDF
+            </a>
+            <a href="https://www.linkedin.com/in/nuthan-s29/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">View LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-hero glass reveal">
+          <div class="contact-hero__content">
+            <span class="section__tag">Contact</span>
+            <h2 class="section__title">Let's Build Something<br /><span class="gradient-text">Intelligent Together</span></h2>
+            <p>Open to AI Engineer roles, internships, and collaborations. I typically respond within 24 hours.</p>
+          </div>
+          <div class="contact-hero__actions">
+            <a href="mailto:nuthannikhil2903@gmail.com" class="btn btn--primary btn--lg">nuthannikhil2903@gmail.com</a>
+            <a href="tel:+919390285510" class="btn btn--secondary btn--lg">+91 93902 85510</a>
+            <p class="contact-hero__location">Hyderabad, Telangana</p>
+            <div class="contact-hero__social">
+              <a href="https://www.linkedin.com/in/nuthan-s29/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <span class="dot-sep">&middot;</span>
+              <a href="https://github.com/Snuthan" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass reveal reveal--delay-1" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">Sadhbuddhi Nuthan</span>
+          <p class="footer__tagline">Building Intelligent Systems That Create Real-World Impact.</p>
+        </div>
+        <div class="footer__nav">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Sadhbuddhi Nuthan &middot; AI Engineer</p>
+        <div class="footer__social">
+          <a href="https://github.com/Snuthan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/nuthan-s29/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contact" class="floating-cta" id="floating-cta" aria-label="Hire me">
+    <span>Hire Me</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

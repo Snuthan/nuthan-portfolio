@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadhbuddhi Nuthan — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0f;
+      color: #f5f5f7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 24px;
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      flex-wrap: wrap;
+    }
+    .toolbar h1 { font-size: 1rem; font-weight: 600; }
+    .toolbar p { font-size: 0.8125rem; color: rgba(245,245,247,0.55); margin-top: 2px; }
+    .toolbar__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #00e5ff, #b44aff);
+      color: #000;
+    }
+    .btn--ghost {
+      background: rgba(255,255,255,0.05);
+      color: #f5f5f7;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .viewer {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    iframe {
+      width: 100%;
+      max-width: 900px;
+      height: calc(100vh - 88px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div>
+      <h1>Sadhbuddhi Nuthan — Resume</h1>
+      <p>AI Engineer · Generative AI Developer · Agentic AI Enthusiast</p>
+    </div>
+    <div class="toolbar__actions">
+      <a href="index.html" class="btn btn--ghost">← Back to Portfolio</a>
+      <a href="assets/resume.pdf" class="btn btn--primary" download>Download PDF</a>
+    </div>
+  </div>
+  <div class="viewer">
+    <iframe src="assets/resume.pdf" title="Sadhbuddhi Nuthan Resume"></iframe>
+  </div>
+</body>
+</html>
